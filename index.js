@@ -16,19 +16,19 @@ app.listen(PORT, () => {
 });
 
 // ✅ Fixed Bot Token
-const BOT_TOKEN = '86031144761:AAF6Pt7cylensV3646464644664';
+const BOT_TOKEN = '7469317637:AAFKD9UIg_IOGRNQpaFx9p9qhu2UGD7Bwdc';
 const bot = new Telegraf(BOT_TOKEN);
 
 // ✅ TeraBox URL Validation  
 const teraboxUrlRegex = /^https:\/\/(terabox\.com|1024terabox\.com|teraboxapp\.com|teraboxlink\.com|terasharelink\.com|terafileshare\.com)\/s\/[A-Za-z0-9-_]+$/;
 
 // ✅ Your Telegram Channel ID  
-const CHANNEL_ID = "-1008906645565465"; // 🔹 এখানে আপনার চ্যানেলের আইডি বসান  
+const CHANNEL_ID = "-1002386083429"; // 🔹 এখানে আপনার চ্যানেলের আইডি বসান  
 
 // ✅ /start Command  
 bot.start((ctx) => {
     const welcomeMessage = '👋 Welcome! Send a TeraBox link to download.';
-    const imageUrl = 'https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg';
+    const imageUrl = 'https://envs.sh/kpW.jpg';
 
     ctx.replyWithPhoto(
         { url: imageUrl },
@@ -36,7 +36,7 @@ bot.start((ctx) => {
             caption: welcomeMessage,
             parse_mode: 'Markdown',
             ...Markup.inlineKeyboard([
-                [Markup.button.url('📌 US ❖ 𝐖𝐃 𝐙𝐎𝐍𝐄 ❖', 'https://t.me/Opleech_WD')]
+                [Markup.button.url('📌 US ❖ AKMovieBotz ❖', 'https://t.me/AKMovieBotz')]
             ])
         }
     );
@@ -75,7 +75,7 @@ bot.on('text', async (ctx) => {
         }
 
         // ✅ Image Link  
-        const imageUrl = 'https://graph.org/file/120e174a9161afae40914.jpg';
+        const imageUrl = 'https://envs.sh/kpW.jpg';
 
         // ✅ Send Image with Caption & Download Button (একসাথে)  
         const caption = `🎬 **File Processing Done!**\n✅ **Download Link Found:**\n📁 **File:** ${filename}\n⚖ **Size:** ${fileSize}\n⏳ **Estimated Time:** ${estimatedTime}`;
